@@ -16,6 +16,12 @@
       "preserveConstEnums": true,
       "useUnknownInCatchVariables": false,
       "baseUrl": "./src",
+      "paths": {
+            "ui": ["src/ui/index"],
+            "@ui": ["src/ui/*"],
+            "app": ["src/app/index"],
+            "@app": ["src/app/*"]
+        },
       "types": [
           "vite/client", "node"
       ]
