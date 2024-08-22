@@ -17,11 +17,10 @@
       "useUnknownInCatchVariables": false,
       "baseUrl": "./src",
       "paths": {
-            "ui": ["ui/index"],
-            "@ui": ["ui/*"],
-            "app": ["app/index"],
-            "@app": ["app/*"]
-        },
+        "@api": ["api/index"],
+        "@app": ["app/index"],
+        "@ui": ["ui/index"]
+      },
       "types": [
           "vite/client", "node"
       ]
