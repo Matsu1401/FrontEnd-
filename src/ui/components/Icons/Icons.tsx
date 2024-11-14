@@ -8,13 +8,13 @@ const Icons = (props: Models.IconsProps): React.ReactElement<Models.IconsProps> 
     switch (props.type) {
         case 'Delete':
             return (
-                <svg className={styles.add}>
+                <svg className={styles.delete}>
                     <Delete />
                 </svg>
             )
         case 'Add':
             return (
-                <svg className={styles.delete}>
+                <svg className={styles.add}>
                     <Add />
                 </svg>
             )
