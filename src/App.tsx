@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './App.css'
 import Text from './ui/components/Text/Text'
-// import Icons from './ui/components/Icons/Icons'
 
 const App = (): React.ReactElement => {
     const [count, setCount] = useState(0)

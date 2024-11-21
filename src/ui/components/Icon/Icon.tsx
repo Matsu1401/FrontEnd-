@@ -2,9 +2,9 @@ import { Models } from '@ui'
 import Add from './images/Add.svg?react'
 import Delete from './images/Delete.svg?react'
 import Logout from './images/Logout.svg?react'
-import styles from './Icons.module.css'
+import styles from './Icon.module.css'
 
-const Icons = (props: Models.IconsProps): React.ReactElement<Models.IconsProps> => {
+const Icon = (props: Models.IconProps): React.ReactElement<Models.IconProps> => {
     switch (props.type) {
         case 'Delete':
             return (
@@ -25,8 +25,8 @@ const Icons = (props: Models.IconsProps): React.ReactElement<Models.IconsProps> 
                 </svg>
             )
         default:
-            throw new Error(`Unknown Type`)
+            throw new Error('Unknown Type')
     }
 }
 
-export default Icons
+export default Icon

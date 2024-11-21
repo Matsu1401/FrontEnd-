@@ -6,13 +6,13 @@ export interface ITextProps {
     children?: React.ReactNode
 }
 
-export interface IconbuttonProps {
-    type: Enums.IconbuttonType
+export interface IconButtonProps {
+    type: Enums.IconButtonType
     color: Enums.ColorType
     children?: React.ReactNode
 }
 
-export interface IconsProps {
-    type: Enums.IconsType
+export interface IconProps {
+    type: Enums.IconType
     children?: React.ReactNode
 }
