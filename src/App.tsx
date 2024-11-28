@@ -1,9 +1,13 @@
 import { useState } from 'react'
 import './App.css'
 import Text from './ui/components/Text/Text'
+import IconButton from './ui/components/Iconbutton/Iconbutton'
 
 const App = (): React.ReactElement => {
     const [count, setCount] = useState(0)
+    const handleClick = () => {
+        alert('Button clicked')
+    }
 
     return (
         <>
@@ -15,6 +19,7 @@ const App = (): React.ReactElement => {
                 <Text type={'Paragraph'} color={'Primary'}>
                     Edit <code>src/App.tsx</code> and save to test HMR
                 </Text>
+                <IconButton type={'Medium'} color={'Primary'} onClick={handleClick} />
             </div>
             <Text type={'Paragraph'} color={'Primary'}>
                 Click on the Vite and React logos to learn more
